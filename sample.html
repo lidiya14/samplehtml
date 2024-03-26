@@ -2,30 +2,34 @@
 
 <head>
   <style>
-    #customers {
+    #customers,#table1 {
       font-family: Arial, Helvetica, sans-serif;
       border-collapse: collapse;
       width: 89%;
-
       margin: 20px;
+      box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.3);
+      transition: 0.3s;
+      background-color: white;
     }
 
     #customers td,
-    #customers th {
+    #customers th,#table1 td,#table1 th {
       border: 1px solid #ddd;
       padding: 10px;
       text-align: center;
+      
     }
 
-    #customers tr:nth-child(even) {
+    #customers tr:nth-child(even) ,#table1 tr:nth-child(even) {
       background-color: #f2f2f2;
     }
 
-    #customers tr:hover {
+    #customers tr:hover,#table1 tr:hover {
       background-color: #ddd;
     }
+   
 
-    #customers th {
+    #customers th,#table1 th {
       padding-top: 12px;
       padding-bottom: 12px;
 
@@ -46,28 +50,35 @@
     .card1,
     .card2 {
       /* Add shadows to create the "card" effect */
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.3);
       transition: 0.3s;
       width: 40%;
-      height: 40%;
+      height: 45%;
       float: left;
       margin: 20px;
       padding: 20px;
+      padding-top: 3px;
       background-color: white;
+      overflow: hidden; 
+      
     }
 
     .card3 {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.3);
       transition: 0.3s;
-      width: 86%;
+      width: 89%;
       height: 5%;
-      margin: 20px;
-      padding: 20px;
+      margin-bottom: 2px;
+      margin-left: 17px;
+      padding-top: 5px;
+      padding-bottom: 40px;
+      font-style:italic;
     }
 
     html {
-      background-color: aliceblue;
+      background-color: rgb(205, 225, 243);
     }
+   
   </style>
 </head>
 
@@ -84,6 +95,28 @@
 
       <div class="card1">
         <h2>Validation Status</h2>
+        <table id="table1"> 
+          <tr>
+            <th>name</th>
+            <th>id</th>
+          </tr>
+          <tr>
+            <td>ira</td>
+            <td>jear</td>
+           </tr>
+           <tr>
+            <td>ira</td>
+            <td>jear</td>
+           </tr>
+           <tr>
+            <td>ira</td>
+            <td>jear</td>
+           </tr>
+           <tr>
+            <td>ira</td>
+            <td>jear</td>
+           </tr>
+        </table>
 
       </div>
       <div class="card2">
@@ -96,6 +129,10 @@
 
           <h4>&#10006; <b>rejected</b> </h4>
           <h4>&#10006; <b>rejected</b> </h4>
+          <h4>&#10006; <b>rejected</b> </h4>
+          <h4>&#10006; <b>rejected</b> </h4>
+          
+         
         </div>
       </div>
     </div>
